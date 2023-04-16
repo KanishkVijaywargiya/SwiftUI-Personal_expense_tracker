@@ -29,6 +29,11 @@ struct SliderScreen: View {
         .onAppear {
             motionManager.fetchMotionData()
         }
+        .onChange(of: authManager.errorDescription) { newValue in
+            if let _ = newValue {
+                showSlider = true
+            }
+        } /// this is for bringing back the slider
         .darkBackground()
         .edgesIgnoringSafeArea(.all)
     }
@@ -107,13 +112,13 @@ extension SliderScreen {
                             endPoint: .trailing
                         )
                     )
-                    .onAppear {
-                        if !authManager.isAuthenticated {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                self.showSlider = true
-                            }
-                        }
-                    }
+//                    .onAppear {
+//                        if !authManager.isAuthenticated {
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                                self.showSlider = true
+//                            }
+//                        }
+//                    }
             }
         }
         .padding(.top, 40)
