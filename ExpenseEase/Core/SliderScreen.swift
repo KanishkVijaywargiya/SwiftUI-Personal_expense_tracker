@@ -52,7 +52,7 @@ struct SliderScreen_Previews: PreviewProvider {
     }
 }
 
-/// image view & slider button
+/// image view & description area
 extension SliderScreen {
     private var imageView: some View {
         GeometryReader { geo in
@@ -104,7 +104,7 @@ extension SliderScreen {
     }
 }
 
-/// description area
+/// slider button
 extension SliderScreen {
     private var sliderButton: some View {
         ZStack {
@@ -114,9 +114,9 @@ extension SliderScreen {
                 .foregroundColor(Color(hex: "06122F"))
             
             Text("Swipe to Unlock")
-                .fontWeight(.semibold).foregroundColor(Color(hex: "92BAFE")).offset(x: 30, y: 0)
+                .fontWeight(.semibold)
                 .opacity(Double(1 - ( (self.dragOffset.width * 2) / self.trackSize.width )))
-//                .shimmer(.init(tint: .black.opacity(0.2), highlight: .black, blur: 5))
+                .shimmer(.init(tint: Color(hex: "92BAFE").opacity(0.5), highlight: .white, blur: 5))
             
             /// thumb
             ZStack {
