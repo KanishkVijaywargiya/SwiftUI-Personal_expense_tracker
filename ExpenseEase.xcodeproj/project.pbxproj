@@ -10,6 +10,8 @@
 		040C02EA29EBDFBD0090AA2D /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02E929EBDFBD0090AA2D /* CGSize+Extension.swift */; };
 		040C02EC29EBE44D0090AA2D /* Comparable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02EB29EBE44D0090AA2D /* Comparable+Extension.swift */; };
 		040C02EE29EBF7520090AA2D /* ShimmerEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02ED29EBF7520090AA2D /* ShimmerEffectModifier.swift */; };
+		040C02F029EBFB020090AA2D /* DarkBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02EF29EBFB020090AA2D /* DarkBackground.swift */; };
+		040C02F529EBFBD60090AA2D /* SliderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02F429EBFBD60090AA2D /* SliderButton.swift */; };
 		041B993A29EACA9400879C36 /* ExpenseEaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B993929EACA9400879C36 /* ExpenseEaseApp.swift */; };
 		041B993C29EACA9400879C36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B993B29EACA9400879C36 /* ContentView.swift */; };
 		041B993E29EACA9800879C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041B993D29EACA9800879C36 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		040C02E929EBDFBD0090AA2D /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
 		040C02EB29EBE44D0090AA2D /* Comparable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Extension.swift"; sourceTree = "<group>"; };
 		040C02ED29EBF7520090AA2D /* ShimmerEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectModifier.swift; sourceTree = "<group>"; };
+		040C02EF29EBFB020090AA2D /* DarkBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBackground.swift; sourceTree = "<group>"; };
+		040C02F429EBFBD60090AA2D /* SliderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderButton.swift; sourceTree = "<group>"; };
 		041B993629EACA9400879C36 /* ExpenseEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B993929EACA9400879C36 /* ExpenseEaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEaseApp.swift; sourceTree = "<group>"; };
 		041B993B29EACA9400879C36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040C02F129EBFB9B0090AA2D /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				040C02F429EBFBD60090AA2D /* SliderButton.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
 		041B992D29EACA9400879C36 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +77,7 @@
 			children = (
 				041B993929EACA9400879C36 /* ExpenseEaseApp.swift */,
 				041B993B29EACA9400879C36 /* ContentView.swift */,
+				040C02F129EBFB9B0090AA2D /* Item */,
 				042454B529EACF30009D77D9 /* Extensions */,
 				0488CDB129EB274C003E190F /* Helper */,
 				0488CDAE29EB1804003E190F /* Core */,
@@ -105,6 +118,7 @@
 			children = (
 				0488CDAF29EB190A003E190F /* MotionManager.swift */,
 				040C02ED29EBF7520090AA2D /* ShimmerEffectModifier.swift */,
+				040C02EF29EBFB020090AA2D /* DarkBackground.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -185,7 +199,9 @@
 				040C02EA29EBDFBD0090AA2D /* CGSize+Extension.swift in Sources */,
 				041B993C29EACA9400879C36 /* ContentView.swift in Sources */,
 				041B993A29EACA9400879C36 /* ExpenseEaseApp.swift in Sources */,
+				040C02F529EBFBD60090AA2D /* SliderButton.swift in Sources */,
 				042454B729EACF44009D77D9 /* Color+Extensions.swift in Sources */,
+				040C02F029EBFB020090AA2D /* DarkBackground.swift in Sources */,
 				040C02EE29EBF7520090AA2D /* ShimmerEffectModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
