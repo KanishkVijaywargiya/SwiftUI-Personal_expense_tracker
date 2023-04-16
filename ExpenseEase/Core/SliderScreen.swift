@@ -69,16 +69,7 @@ extension SliderScreen {
                 Text("with").font(.title2.bold()).foregroundColor(.primary)
                 Text("ExpenseEase")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(
-                        .linearGradient(
-                            colors: [
-                                Color(hex: "02D5FF"),
-                                Color(hex: "C84CFF")
-                            ],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
+                    .textForground()
             } /// gradient text
             
             VStack (spacing: 50) {
@@ -102,8 +93,8 @@ extension SliderScreen {
             } else if !showSlider {
                 ProgressView()
                     .transition(AnyTransition.scale.animation(Animation.spring(response: 0.5, dampingFraction: 0.5)))
-                    .foregroundStyle(
-                        .linearGradient(
+                    .tint(
+                        LinearGradient(
                             colors: [
                                 Color(hex: "02D5FF"),
                                 Color(hex: "C84CFF")
@@ -112,13 +103,16 @@ extension SliderScreen {
                             endPoint: .trailing
                         )
                     )
-//                    .onAppear {
-//                        if !authManager.isAuthenticated {
-//                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                                self.showSlider = true
-//                            }
-//                        }
-//                    }
+                    .onDisappear {
+                        authManager.errorDescription = nil
+                    }
+                //                    .onAppear {
+                //                        if !authManager.isAuthenticated {
+                //                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                //                                self.showSlider = true
+                //                            }
+                //                        }
+                //                    }
             }
         }
         .padding(.top, 40)

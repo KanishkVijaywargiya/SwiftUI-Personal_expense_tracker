@@ -68,7 +68,6 @@ extension SliderButton {
     func onSwipeSuccess(_ action: @escaping() -> ()) -> Self {
         var this = self
         this.actionSuccess = action
-        print(action)
         return this
       }
     

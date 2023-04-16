@@ -10,10 +10,19 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            Text("Home View")
+            Image("banner02")
+                .ignoresSafeArea()
+            
+            Spacer()
+            
+            Text("Home")
+                .font(.largeTitle.bold())
+                .textForground()
+            
+            Spacer()
         }
         .darkBackground()
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

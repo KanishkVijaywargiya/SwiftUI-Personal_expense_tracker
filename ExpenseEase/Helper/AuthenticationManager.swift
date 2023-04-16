@@ -5,6 +5,9 @@
 //  Created by Kanishk Vijaywargiya on 16/04/23.
 //
 
+/// private(set) making it impossible to edit the publish property from other pages
+/// it only allows editing from the page where the publish property is written, so in order to do that need to remove private(set)
+
 import Foundation
 import LocalAuthentication
 
@@ -15,7 +18,7 @@ class AuthenticationManager: ObservableObject {
     
     @Published private(set) var biometryType: LABiometryType = .none
     @Published private(set) var isAuthenticated: Bool = false
-    @Published private(set) var errorDescription: String?
+    @Published var errorDescription: String?
     @Published var showAlert: Bool = false
     
     init() {
