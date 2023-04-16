@@ -56,7 +56,7 @@ struct SliderScreen: View {
                 /// slider button with haptic & biometric system
                 Text("Slider")
             }
-            .padding(.top, 20)
+            .padding(.top, 40)
             .padding(.bottom, 40) /// home screen content
         }
         .onAppear {
