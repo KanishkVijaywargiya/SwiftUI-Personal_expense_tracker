@@ -9,14 +9,22 @@ import SwiftUI
 import CoreMotion
 
 struct SliderScreen: View {
+    @EnvironmentObject var authManager: AuthenticationManager
     @StateObject private var motionManager = MotionManager()
     @State private var position = CGPoint.zero
+    @State private var showSlider: Bool = true
     
     var body: some View {
-        VStack {
-            imageView
-            
-            descriptionArea
+        ZStack {
+            if authManager.isAuthenticated {
+                HomeView()
+            } else {
+                VStack {
+                    imageView
+                    
+                    descriptionArea
+                }
+            }
         }
         .onAppear {
             motionManager.fetchMotionData()
@@ -29,6 +37,7 @@ struct SliderScreen: View {
 struct SliderScreen_Previews: PreviewProvider {
     static var previews: some View {
         SliderScreen()
+            .environmentObject(AuthenticationManager())
     }
 }
 
@@ -77,7 +86,35 @@ extension SliderScreen {
             Spacer()
             
             /// slider button with haptic & biometric system
-            SliderButton()
+            if showSlider {
+                SliderButton()
+                    .onSwipeSuccess {
+                        Task {
+                            await authManager.authenticateWithBiometrics()
+                        }
+                        showSlider = false
+                    }
+            } else if !showSlider {
+                ProgressView()
+                    .transition(AnyTransition.scale.animation(Animation.spring(response: 0.5, dampingFraction: 0.5)))
+                    .foregroundStyle(
+                        .linearGradient(
+                            colors: [
+                                Color(hex: "02D5FF"),
+                                Color(hex: "C84CFF")
+                            ],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .onAppear {
+                        if !authManager.isAuthenticated {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                self.showSlider = true
+                            }
+                        }
+                    }
+            }
         }
         .padding(.top, 40)
         .padding(.bottom, 40) /// home screen content

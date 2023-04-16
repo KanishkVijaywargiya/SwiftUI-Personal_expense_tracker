@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var authManager = AuthenticationManager()
+    
     var body: some View {
-        SliderScreen()
+        SliderScreen().environmentObject(authManager)
     }
 }
 

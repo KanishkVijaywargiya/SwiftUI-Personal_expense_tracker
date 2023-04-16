@@ -12,6 +12,10 @@
 		040C02EE29EBF7520090AA2D /* ShimmerEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02ED29EBF7520090AA2D /* ShimmerEffectModifier.swift */; };
 		040C02F029EBFB020090AA2D /* DarkBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02EF29EBFB020090AA2D /* DarkBackground.swift */; };
 		040C02F529EBFBD60090AA2D /* SliderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02F429EBFBD60090AA2D /* SliderButton.swift */; };
+		040C02F729EC24690090AA2D /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02F629EC24690090AA2D /* AuthenticationManager.swift */; };
+		040C02F929EC24A00090AA2D /* CheckBiometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02F829EC24A00090AA2D /* CheckBiometric.swift */; };
+		040C02FD29EC257A0090AA2D /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02FC29EC257A0090AA2D /* HapticManager.swift */; };
+		040C02FF29EC27D90090AA2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02FE29EC27D90090AA2D /* HomeView.swift */; };
 		041B993A29EACA9400879C36 /* ExpenseEaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B993929EACA9400879C36 /* ExpenseEaseApp.swift */; };
 		041B993C29EACA9400879C36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B993B29EACA9400879C36 /* ContentView.swift */; };
 		041B993E29EACA9800879C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041B993D29EACA9800879C36 /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 		040C02ED29EBF7520090AA2D /* ShimmerEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectModifier.swift; sourceTree = "<group>"; };
 		040C02EF29EBFB020090AA2D /* DarkBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBackground.swift; sourceTree = "<group>"; };
 		040C02F429EBFBD60090AA2D /* SliderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderButton.swift; sourceTree = "<group>"; };
+		040C02F629EC24690090AA2D /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		040C02F829EC24A00090AA2D /* CheckBiometric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBiometric.swift; sourceTree = "<group>"; };
+		040C02FC29EC257A0090AA2D /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		040C02FE29EC27D90090AA2D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		041B993629EACA9400879C36 /* ExpenseEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B993929EACA9400879C36 /* ExpenseEaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEaseApp.swift; sourceTree = "<group>"; };
 		041B993B29EACA9400879C36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0488CDAC29EB17FF003E190F /* SliderScreen.swift */,
+				040C02FE29EC27D90090AA2D /* HomeView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -119,6 +128,9 @@
 				0488CDAF29EB190A003E190F /* MotionManager.swift */,
 				040C02ED29EBF7520090AA2D /* ShimmerEffectModifier.swift */,
 				040C02EF29EBFB020090AA2D /* DarkBackground.swift */,
+				040C02F629EC24690090AA2D /* AuthenticationManager.swift */,
+				040C02F829EC24A00090AA2D /* CheckBiometric.swift */,
+				040C02FC29EC257A0090AA2D /* HapticManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -195,6 +207,10 @@
 			files = (
 				040C02EC29EBE44D0090AA2D /* Comparable+Extension.swift in Sources */,
 				0488CDAD29EB17FF003E190F /* SliderScreen.swift in Sources */,
+				040C02FD29EC257A0090AA2D /* HapticManager.swift in Sources */,
+				040C02FF29EC27D90090AA2D /* HomeView.swift in Sources */,
+				040C02F729EC24690090AA2D /* AuthenticationManager.swift in Sources */,
+				040C02F929EC24A00090AA2D /* CheckBiometric.swift in Sources */,
 				0488CDB029EB190A003E190F /* MotionManager.swift in Sources */,
 				040C02EA29EBDFBD0090AA2D /* CGSize+Extension.swift in Sources */,
 				041B993C29EACA9400879C36 /* ContentView.swift in Sources */,
@@ -334,6 +350,8 @@
 				DEVELOPMENT_TEAM = YHZVJQ792Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow $(PRODUCT_NAME) to use FaceID to Log into the app";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow $(PRODUCT_NAME) to access photo gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +381,8 @@
 				DEVELOPMENT_TEAM = YHZVJQ792Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow $(PRODUCT_NAME) to use FaceID to Log into the app";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow $(PRODUCT_NAME) to access photo gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
