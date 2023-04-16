@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C02EA29EBDFBD0090AA2D /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02E929EBDFBD0090AA2D /* CGSize+Extension.swift */; };
+		040C02EC29EBE44D0090AA2D /* Comparable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02EB29EBE44D0090AA2D /* Comparable+Extension.swift */; };
 		041B993A29EACA9400879C36 /* ExpenseEaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B993929EACA9400879C36 /* ExpenseEaseApp.swift */; };
 		041B993C29EACA9400879C36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B993B29EACA9400879C36 /* ContentView.swift */; };
 		041B993E29EACA9800879C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041B993D29EACA9800879C36 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040C02E929EBDFBD0090AA2D /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		040C02EB29EBE44D0090AA2D /* Comparable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Extension.swift"; sourceTree = "<group>"; };
 		041B993629EACA9400879C36 /* ExpenseEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B993929EACA9400879C36 /* ExpenseEaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEaseApp.swift; sourceTree = "<group>"; };
 		041B993B29EACA9400879C36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				042454B629EACF44009D77D9 /* Color+Extensions.swift */,
+				040C02E929EBDFBD0090AA2D /* CGSize+Extension.swift */,
+				040C02EB29EBE44D0090AA2D /* Comparable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040C02EC29EBE44D0090AA2D /* Comparable+Extension.swift in Sources */,
 				0488CDAD29EB17FF003E190F /* SliderScreen.swift in Sources */,
 				0488CDB029EB190A003E190F /* MotionManager.swift in Sources */,
+				040C02EA29EBDFBD0090AA2D /* CGSize+Extension.swift in Sources */,
 				041B993C29EACA9400879C36 /* ContentView.swift in Sources */,
 				041B993A29EACA9400879C36 /* ExpenseEaseApp.swift in Sources */,
 				042454B729EACF44009D77D9 /* Color+Extensions.swift in Sources */,
