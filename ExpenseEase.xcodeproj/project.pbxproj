@@ -24,6 +24,7 @@
 		0465D19829EC4ACE00F32F3B /* TextForeground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D19729EC4ACD00F32F3B /* TextForeground.swift */; };
 		0488CDAD29EB17FF003E190F /* SliderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CDAC29EB17FF003E190F /* SliderScreen.swift */; };
 		0488CDB029EB190A003E190F /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CDAF29EB190A003E190F /* MotionManager.swift */; };
+		04E8A14329ED3EBB00BD325F /* InstaQRCodeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8A14229ED3EBB00BD325F /* InstaQRCodeUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		0465D19729EC4ACD00F32F3B /* TextForeground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForeground.swift; sourceTree = "<group>"; };
 		0488CDAC29EB17FF003E190F /* SliderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderScreen.swift; sourceTree = "<group>"; };
 		0488CDAF29EB190A003E190F /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		04E8A14229ED3EBB00BD325F /* InstaQRCodeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaQRCodeUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				040C02F429EBFBD60090AA2D /* SliderButton.swift */,
+				04E8A14229ED3EBB00BD325F /* InstaQRCodeUI.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				040C02F929EC24A00090AA2D /* CheckBiometric.swift in Sources */,
 				0488CDB029EB190A003E190F /* MotionManager.swift in Sources */,
 				040C02EA29EBDFBD0090AA2D /* CGSize+Extension.swift in Sources */,
+				04E8A14329ED3EBB00BD325F /* InstaQRCodeUI.swift in Sources */,
 				041B993C29EACA9400879C36 /* ContentView.swift in Sources */,
 				041B993A29EACA9400879C36 /* ExpenseEaseApp.swift in Sources */,
 				040C02F529EBFBD60090AA2D /* SliderButton.swift in Sources */,
@@ -362,8 +366,8 @@
 				DEVELOPMENT_TEAM = YHZVJQ792Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow $(PRODUCT_NAME) to use FaceID to Log into the app";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow $(PRODUCT_NAME) to access photo gallery";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow ExpenseEase to use FaceID to Log into the app";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow ExpenseEase to access photo gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -393,8 +397,8 @@
 				DEVELOPMENT_TEAM = YHZVJQ792Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow $(PRODUCT_NAME) to use FaceID to Log into the app";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow $(PRODUCT_NAME) to access photo gallery";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow ExpenseEase to use FaceID to Log into the app";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow ExpenseEase to access photo gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
